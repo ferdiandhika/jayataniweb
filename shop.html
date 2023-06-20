@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="style.css" />
+   <script src="https://kit.fontawesome.com/df2557845a.js" crossorigin="anonymous"></script>
+   <title>Jual & Beli</title>
+</head>
+
+<body>
+   <div class="shop">
+      <!-- HEADER -->
+      <header>
+         <div class="main">
+            <div class="banner">
+               <p>Bebas ongkir sampai tanggal 22 April, ayo buruan beli!</p>
+            </div>
+            <div class="navbar">
+               <div class="left-nav">
+                  <div class="menu-toogle">
+                     <div class="var"></div>
+                     <div class="var"></div>
+                     <div class="var"></div>
+                  </div>
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="Object\LogoJayaTani.png" alt="Logo Jaya Tani" />
+                     </a>
+                  </div>
+               </div>
+               <div class="right-nav">
+                  <ul>
+                     <li>
+                        <a href="keranjang.html"><img src="Object\Basket.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Notification.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Help.png" /></a>
+                     </li>
+                  </ul>
+                  <div class="divider"></div>
+                  <div class="profile">
+                     <a href="login.html">
+                        <ul>
+                           <li><img src="Object\Profile.png" /></li>
+                           <li>
+                              <p>Login</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- CONTENT -->
+      <!-- search -->
+      <div class="content-1">
+         <div class="img"><img src="Object\search.png" /></div>
+         <span></span>
+         <input id="search" type="text" placeholder="Temukan belanjaanmu" onkeyup="keyupFunction()">
+         <i class="fa-solid fa-xmark" style="color: #b0b0b0;" id="erase" onclick="erase()"></i>
+      </div>
+      <div class="content-2">
+         <span></span>
+      </div>
+      <div class="content-3">
+         <div class="left">
+            <i class="fa-solid fa-bars-staggered" style="color: #302b2b;"></i>
+            <div class="filter">
+               <p>Kategori</p>
+               <ul>
+                  <li>Pupuk</li>
+                  <li>Tanaman Hias</li>
+                  <li>Pohon</li>
+                  <li>Tanah</li>
+                  <li>Penyiram Tanaman</li>
+               </ul>
+            </div>
+         </div>
+         <div class="right">
+            <ul class="top">
+               <li class="judul"><p>Urutkan :</p></li>
+               <li class="list"><button><p></p>Populer</button></li>
+               <li class="list"><button>Terlaris</button></li>
+               <li class="list"><button>Paling Sesuai</button></li>
+               <li class="list"><button>Harga Tertinggi</button></li>
+               <li class="list"><button>Harga Terendah</button></li>
+            </ul>
+            <ul class="bot">
+               <li class="garu">
+                  <ul class="isi">
+                     <li class="img"></li>
+                     <li class="judul" style="font-weight: 400;"><a href="mboh.html">Garu Cangkul</a></li>
+                     <li class="price" style="font-weight: 600;">Rp120.000</li>
+                     <li class="rateSold">
+                        <p><i class="fa-solid fa-star" style="color: #ede62c;"></i><span style="color: rgba(30, 30, 30, 0.72)
+                           ;"> 5 | 3Rb Terjual</span></p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="paket">
+                  <ul class="isi">
+                     <li class="img"></li>
+                     <li class="judul" style="font-weight: 400;"><a href="mboh.html">Paket Instalasi Me..</a></li>
+                     <li class="price" style="font-weight: 600;">Rp2.400.000</li>
+                     <li class="rateSold">
+                        <p><i class="fa-solid fa-star" style="color: #ede62c;"></i> <span style="color: rgba(30, 30, 30, 0.72);"> 4 | 500 Terjual</span> </p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="sprayer">
+                  <ul class="isi">
+                     <li class="img"></li>
+                     <li class="judul" style="font-weight: 400;"><a href="mboh.html">Sprayer Elektrik D..</a></li>
+                     <li class="price" style="font-weight: 600;">Rp120.000</li>
+                     <li class="rateSold">
+                        <p><i class="fa-solid fa-star" style="color: #ede62c;"></i> <span style="color: rgba(30, 30, 30, 0.72);"> 4.5 | 1Rb Terjual</span></p>
+                     </li>
+                  </ul>
+               </li>
+               <li class="mesin">
+                  <ul class="isi">
+                     <li class="img"></li>
+                     <li class="judul" style="font-weight: 400;"><a href="mboh.html">Mesin Pemotong</a></li>
+                     <li class="price" style="font-weight: 600;">Rp270.000</li>
+                     <li class="rateSold">
+                        <p><i class="fa-solid fa-star" style="color: #ede62c;"></i> <span style="color: rgba(30, 30, 30, 0.72);"> 4.3 | 700 Terjual</span></p>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+      
+      <!-- FOOTER -->
+      <footer>
+         <div class="main">
+            <div class="top">
+               <ul class="head">
+                  <li class="logo">
+                     <a href="index.html"><img src="Object\LogoJayaTani.png" /></a>
+                  </li>
+                  <li class="learn">
+                     <div class="txt">
+                        <p>Learn More</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>About Us</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Privacy Policy</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="contact.html">
+                              <p>Contact Us</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="eCommerce">
+                     <div class="txt">
+                        <p>E-Commerce</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="shop.html">
+                              <p>Beli alat dan bahan</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Wishlist</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="contact">
+                     <div class="txt">
+                        <p>Contact Us</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>Whatsapp: +62 8142435344</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Cellphone: 7606287</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="social">
+                     <div class="txt">
+                        <p>Social</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#"><img src="Object\bxl-facebook.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\instagram-logo.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\bxl-twitter.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\youtube-logo.svg" /></a>
+                        </li>
+                        
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="mid"></div>
+            <div class="copyright">
+               <p>&copy; Jaya Tani, Inc.</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="script.js"></script>
+   
+</body>
+
+</html>
