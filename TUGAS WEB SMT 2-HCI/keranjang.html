@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="in">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="style.css" />
+   
+   <title>Keranjang</title>
+</head>
+
+<body>
+   <div class="keranjang">
+      <!-- HEADER -->
+      <header>
+         <div class="main">
+            <div class="banner">
+               <p>Bebas ongkir sampai tanggal 22 April, ayo buruan beli!</p>
+            </div>
+            <div class="navbar">
+               <div class="left-nav">
+                  <div class="menu-toogle">
+                     <div class="var"></div>
+                     <div class="var"></div>
+                     <div class="var"></div>
+                  </div>
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="Object\LogoJayaTani.png" alt="Logo Jaya Tani" />
+                     </a>
+                  </div>
+               </div>
+               <div class="right-nav">
+                  <ul>
+                     <li>
+                        <a href="keranjang.html"><img src="Object\Basket.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Notification.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Help.png" /></a>
+                     </li>
+                  </ul>
+                  <div class="divider"></div>
+                  <div class="profile">
+                     <a href="login.html">
+                        <ul>
+                           <li><img src="Object\Profile.png" /></li>
+                           <li>
+                              <p>Login</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- content-->
+      <div class="cont-cari">
+         <div class="cari">
+            <div class="judul">
+               <h3>Keranjang</h3>
+            </div>
+            <div class="content-1">
+               <div class="img"><img src="Object\search.png" /></div>
+               <span></span>
+               <input id="search" type="text" placeholder="Temukan belanjaanmu" onkeyup="keyupFunction()">
+               <i class="fa-solid fa-xmark" style="color: #b0b0b0;" id="erase" onclick="erase()"></i>
+            </div>
+         </div>
+      </div>
+      <div class="content-3">
+         <div class="left">
+            <ul class="list-keranjang">
+               <li class="mesin">
+                  <div class="cont">
+                     <div class="checklist">
+                        <div class="checkbox">
+                           <label class="container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="img"></div>
+                     </div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Mesin Pemotong Rumput<br><span style="font-weight: bold;">Rp820.000</span></p>
+                        </div>
+                        <div class="bot">
+                           <img src="Object\minus.svg" alt="">
+                           <p style="color:#7c7c7c">1</p>
+                           <img src="Object\Plus.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="trash">
+                     <div class="img"></div>
+                  </div>
+               </li>
+               <li class="garu">
+                  <div class="cont">
+                     <div class="checklist">
+                        <div class="checkbox">
+                           <label class="container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="img"></div>
+                     </div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Garu Cangkul<br><span style="font-weight: bold;">Rp120.000</span></p>
+                        </div>
+                        <div class="bot">
+                           <img src="Object\minus.svg" alt="">
+                           <p style="color:#7c7c7c">1</p>
+                           <img src="Object\Plus.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="trash">
+                     <div class="img"></div>
+                  </div>
+               </li>
+               <li class="pupuk">
+                  <div class="cont">
+                     <div class="checklist">
+                        <div class="checkbox">
+                           <label class="container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="img"></div>
+                     </div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Pupuk Organik FertiBio 1 Kg - Pak Tani<br><span style="font-weight: bold;">Rp5.500</span>
+                           </p>
+                        </div>
+                        <div class="bot">
+                           <img src="Object\minus.svg" alt="">
+                           <p style="color:#7c7c7c">1</p>
+                           <img src="Object\Plus.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="trash">
+                     <div class="img"></div>
+                  </div>
+               </li>
+               <li class="benih">
+                  <div class="cont">
+                     <div class="checklist">
+                        <div class="checkbox">
+                           <label class="container">
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                           </label>
+                        </div>
+                        <div class="img"></div>
+                     </div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Benih Bibit Padi Unggul 5 Kg - ELLYATANI<br><span
+                                 style="font-weight: bold;">Rp70.000</span></p>
+                        </div>
+                        <div class="bot">
+                           <img src="Object\minus.svg" alt="">
+                           <p style="color:#7c7c7c">1</p>
+                           <img src="Object\Plus.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="trash">
+                     <div class="img"></div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <div class="right">
+            <div class="top">
+               <div class="barang">
+                  <p>Total Barang</p>
+                  <p>1</p>
+               </div>
+               <div class="harga">
+                  <p>Total Harga</p>
+                  <p>Rp820.000</p>
+               </div>
+            </div>
+            <hr style="opacity: 035%">
+            <a class="checkout" href="checkout.html">Checkout</a>
+         </div>
+      </div>
+      <!-- FOOTER -->
+      <footer>
+         <div class="main">
+            <div class="top">
+               <ul class="head">
+                  <li class="logo">
+                     <a href="index.html"><img src="Object\LogoJayaTani.png" /></a>
+                  </li>
+                  <li class="learn">
+                     <div class="txt">
+                        <p>Learn More</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>About Us</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Privacy Policy</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="contact.html">
+                              <p>Contact Us</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="eCommerce">
+                     <div class="txt">
+                        <p>E-Commerce</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="shop.html">
+                              <p>Beli alat dan bahan</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="keranjang.html">
+                              <p>Wishlist</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="contact">
+                     <div class="txt">
+                        <p>Contact Us</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>Whatsapp: +62 8142435344</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Cellphone: 7606287</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="social">
+                     <div class="txt">
+                        <p>Social</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#"><img src="Object\bxl-facebook.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\instagram-logo.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\bxl-twitter.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="https://youtu.be/se_M-ZYpXaA?t=20"><img src="Object\youtube-logo.svg" /></a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="mid"></div>
+            <div class="copyright">
+               <p>&copy; Jaya Tani, Inc.</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="script.js"></script>
+   
+</body>
+
+</html>

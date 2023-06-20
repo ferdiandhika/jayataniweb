@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300;400;500;600;700&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="style.css" />
+   <script src="https://kit.fontawesome.com/df2557845a.js" crossorigin="anonymous"></script>
+   <title>Konsultasi Ahli</title>
+</head>
+
+<body>
+   <div class="konsultasi">
+      <header>
+         <div class="main">
+            <div class="banner">
+               <p>Bebas ongkir sampai tanggal 22 April, ayo buruan beli!</p>
+            </div>
+            <div class="navbar">
+               <div class="left-nav">
+                  <div class="menu-toogle">
+                     <div class="var"></div>
+                     <div class="var"></div>
+                     <div class="var"></div>
+                  </div>
+                  <div class="logo">
+                     <a href="index.html">
+                        <img src="Object\LogoJayaTani.png" alt="Logo Jaya Tani" />
+                     </a>
+                  </div>
+               </div>
+               <div class="right-nav">
+                  <ul>
+                     <li>
+                        <a href="keranjang.html"><img src="Object\Basket.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Notification.png" /></a>
+                     </li>
+                     <li>
+                        <a href="#"><img src="Object\Help.png" /></a>
+                     </li>
+                  </ul>
+                  <div class="divider"></div>
+                  <div class="profile">
+                     <a href="login.html">
+                        <ul>
+                           <li><img src="Object\Profile.png" /></li>
+                           <li>
+                              <p>Login</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- CONTENT -->
+      <div class="content-1">
+         <div class="img"><img src="Object\search.png" /></div>
+         <span></span>
+         <input id="search" type="text" placeholder="Temukan belanjaanmu" onkeyup="keyupFunction()">
+         <i class="fa-solid fa-xmark" style="color: #b0b0b0;" id="erase" onclick="erase()"></i>
+      </div>
+      <div class="content-2">
+         <span></span>
+      </div>
+      <div class="content-3">
+         <div class="leftt">
+            <i class="fa-sharp fa-solid fa-filter" style="color: #302b2b;"></i>
+            <div class="filter">
+               <p>Filter</p>
+               <ul>
+                  <li>Harga Tertinggi</li>
+                  <li>Harga Terendah</li>
+                  <li>Rating Tertinggi</li>
+                  <li>Rating Terendah</li>
+                  <li>Paling Berpengalaman</li>
+               </ul>
+            </div>
+         </div>
+         <div class="right">
+            <p>Rekomendasi Ahli</p>
+            <ul>
+               <li class="wang">
+                  <div class="left">
+                     <div class="img"></div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Nic Wang, STP., M.Sc., PhD.</p>
+                           <p style="color: #686363; ">Ahli Pertanian</p>
+                        </div>
+                        <div class="bot">
+                           <div class="top">
+                              <div class="rate" style="width: 80px;">
+                                 <i class="fa-solid fa-star" style="color: #302B2B;"></i>
+                                 <p>96%</p>
+                              </div>
+                              <div class="job" style="width: 102px;">
+                                 <i class="fa-solid fa-suitcase" style="color: #302b2b;"></i>
+                                 <p>5 tahun</p>
+                              </div>
+                           </div>
+                           <div class="bot"><p><a href="keranjang.html">Hubungi</a></p></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="right">
+                     <i class="fa-solid fa-tag" style="color: #302b2b;"></i>
+                     <p>Rp10.000 - Rp15.000</p> 
+                  </div>
+               </li>
+               <li class="meng">
+                  <div class="left">
+                     <div class="img"></div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Dr. Mengky Prastowo, STP., M.Sc., PhD.</p>
+                           <p style="color: #686363;">Ahli Pertanian</p>
+                        </div>
+                        <div class="bot">
+                           <div class="top">
+                              <div class="rate" style="width: 80px;">
+                                 <i class="fa-solid fa-star" style="color: #302B2B;"></i>
+                                 <p>97%</p>
+                              </div>
+                              <div class="job" style="width: 102px;">
+                                 <i class="fa-solid fa-suitcase" style="color: #302b2b;"></i>
+                                 <p>7 tahun</p>
+                              </div>
+                           </div>
+                           <div class="bot"><p><a href="keranjang.html">Hubungi</a></p></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="right">
+                     <i class="fa-solid fa-tag" style="color: #302b2b;"></i>
+                     <p>Rp12.000 - Rp16.000</p> 
+                  </div>
+               </li>
+               <li class="megachan">
+                  <div class="left">
+                     <div class="img"></div>
+                     <div class="info">
+                        <div class="top">
+                           <p>Prof. Dr. Ir. Megawali Chan, MS.</p>
+                           <p style="color: #686363;">Ahli Pertanian dan Pakar Pangan</p>
+                        </div>
+                        <div class="bot">
+                           <div class="top">
+                              <div class="rate" style="width: 80px;">
+                                 <i class="fa-solid fa-star" style="color: #302B2B;"></i>
+                                 <p>99%</p>
+                              </div>
+                              <div class="job" style="width: 102px;">
+                                 <i class="fa-solid fa-suitcase" style="color: #302b2b;"></i>
+                                 <p>9 tahun</p>
+                              </div>
+                           </div>
+                           <div class="bot"><p>Hubungi</p></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="right">
+                     <i class="fa-solid fa-tag" style="color: #302b2b;"></i>
+                     <p>Rp20.000 - Rp30.000</p> 
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      
+      <!-- FOOTER -->
+      <footer>
+         <div class="main">
+            <div class="top">
+               <ul class="head">
+                  <li class="logo">
+                     <a href="index.html"><img src="Object\LogoJayaTani.png" /></a>
+                  </li>
+                  <li class="learn">
+                     <div class="txt">
+                        <p>Learn More</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>About Us</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Privacy Policy</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="contact.html">
+                              <p>Contact Us</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="eCommerce">
+                     <div class="txt">
+                        <p>E-Commerce</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>Beli alat dan bahan</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="keranjang.html">
+                              <p>Wishlist</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="contact">
+                     <div class="txt">
+                        <p>Contact Us</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#">
+                              <p>Whatsapp: +62 8142435344</p>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                              <p>Cellphone: 7606287</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="social">
+                     <div class="txt">
+                        <p>Social</p>
+                     </div>
+                     <ul>
+                        <li>
+                           <a href="#"><img src="Object\bxl-facebook.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\instagram-logo.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\bxl-twitter.svg" /></a>
+                        </li>
+                        <li>
+                           <a href="#"><img src="Object\youtube-logo.svg" /></a>
+                        </li>
+                     
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+            <div class="mid"></div>
+            <div class="copyright">
+               <p>&copy; Jaya Tani, Inc.</p>
+            </div>
+         </div>
+      </footer>
+   </div>
+   
+   <script src="script.js"></script>
+</body>
+
+</html>
